@@ -60,6 +60,7 @@ cfg_if! {
         pub use x32::*;
     } else if #[cfg(any(
         target_arch = "aarch64",
+        target_arch = "loongarch64",
         target_arch = "s390x",
     ))] {
         pub use x64::*;
